@@ -65,6 +65,14 @@ section {
     white-space: nowrap;
 }
 
+/* Rectangle */
+.rectangle {
+    width: 80vw;
+    height: 1px;
+    background-color: #858585;
+    white-space: nowrap;
+}
+
 /* Scrolling banner */
 .banner {
     width: 100%;
@@ -333,10 +341,10 @@ section {
     align-items: flex-start;
     background-color:#242424;
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 60px;
     padding-left: 50px;
     padding-right: 50px;
-    border-width: 0px;
+    border: none;
 }
 
 /* Socials icon */
@@ -351,6 +359,7 @@ section {
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
+    margin-bottom: 50px;
 }
 
 #social_media a {
@@ -388,8 +397,8 @@ section {
     margin-bottom: 30px;
 }
 
-.contact-us p:nth-last-of-type(1) {
-    margin-bottom: 50px;
+.contact-us p:nth-of-type(2) {
+    margin-bottom: 5px;
 }
 
 .contact-us strong {
@@ -418,7 +427,7 @@ section {
     background-color:#242424;
     padding-top: 15px;
     padding-bottom: 15px;
-    border-width: 0px;
+    border: none;
 }
 
 /* Text */
@@ -458,7 +467,6 @@ section {
     .introduction {
         flex-direction: row-reverse;
         align-items: center;
-
     }
 
     .introduction-container {
@@ -466,7 +474,7 @@ section {
     }
 
     .introduction img {
-        width: 500px;
+        max-width: 500px
     }
 }
 
