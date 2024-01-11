@@ -363,6 +363,15 @@ section {
     border: none;
 }
 
+.contact-us *:not(:first-child) {
+    transition: .7s;
+}
+
+.contact-us *:not(:first-child).hidden {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
 /* Socials icon */
 #social_media {
     align-self: center;

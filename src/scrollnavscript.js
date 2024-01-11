@@ -59,3 +59,24 @@ window.addEventListener('scroll', function () {
         introLearnMore.classList.remove('hidden');
     }
 });
+
+const targetElement = document.querySelector('#social_media');
+const changeElements = document.querySelectorAll('.contact-us *:not(:first-child)');
+
+const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.5
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            changeElements.forEach(element => element.classList.remove('hidden'));
+        } else {
+            changeElements.forEach(element => element.classList.add('hidden'));
+        }
+    });
+}, options);
+
+observer.observe(targetElement);
