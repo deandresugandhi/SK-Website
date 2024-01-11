@@ -175,7 +175,7 @@ section {
     position: relative;
     padding-top: 4vh;
     padding-bottom: 5vh;
-    background-color: #58416e;
+    background-color: #523b68;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -215,6 +215,12 @@ section {
     line-height: 1;
     color: #6eb843;
     font-weight: 800;
+    transition: .5s;
+}
+
+.introduction h2:nth-of-type(2).hidden {
+    opacity: 0;
+    transform: translateY(-30px);
 }
 
 .introduction h1 {
@@ -236,6 +242,14 @@ section {
     margin-top: 20px;
     font-weight: 50;
     max-width: 800px;
+    transition: .5s;
+    position: relative;
+}
+
+.introduction p.hidden {
+    opacity: 0;
+    position: relative;
+    transform: translateY(-30px)
 }
 
 /* Arrow */
