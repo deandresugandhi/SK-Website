@@ -197,6 +197,10 @@ nav {
     transition: opacity .4s;
 }
 
+.hamburgericon {
+    filter: invert(1)
+}
+
 .closeicon {
     opacity: 0;
     transform-origin: center center;
