@@ -220,7 +220,7 @@ section {
 
 .introduction h2:nth-of-type(2).hidden {
     opacity: 0;
-    transform: translateY(-30px);
+    transform: translateY(30px);
 }
 
 .introduction h1 {
@@ -249,7 +249,7 @@ section {
 .introduction p.hidden {
     opacity: 0;
     position: relative;
-    transform: translateY(-30px)
+    transform: translateY(30px)
 }
 
 /* Arrow */
