@@ -215,7 +215,7 @@ section {
     line-height: 1;
     color: #6eb843;
     font-weight: 800;
-    transition: .5s;
+    transition: .7s ease;
 }
 
 .introduction h2:nth-of-type(2).hidden {
@@ -242,7 +242,7 @@ section {
     margin-top: 20px;
     font-weight: 50;
     max-width: 800px;
-    transition: .5s;
+    transition: .7s ease;
     position: relative;
 }
 
