@@ -23,6 +23,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
 }
 
 .arrow-container span {
@@ -125,7 +126,6 @@ section {
 /* VIDEO CONTENT SECTION STYLING */
 /* Section */
 .videocontent {
-    z-index: -2;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -141,7 +141,6 @@ section {
 .videocontent video {
     width: auto;
     height: 100vh;
-    z-index: -2;
 }
 
 /* Text */
@@ -240,17 +239,28 @@ section {
 /* FEATURED WORK SECTION STYLING */
 /* Section */
 .featured-work {
+    position: relative;
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: #ffffff;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
 /* Text */
 .featured-work h1 {
     font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #161616;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.featured-work h3 {
+    font-size: 1.2rem;
     font-weight: 800;
     line-height: 1.2;
     color: #161616;
@@ -299,6 +309,19 @@ section {
     right: 20px;
     text-align: right;
     opacity: 0.9;
+}
+
+/* Arrow */
+.featured-work .arrow-container {
+    bottom: 2vh;
+}
+
+.featured-work .arrow-container .arrow {
+    border-top: 10px solid #000000c9;
+}
+
+.featured-work .arrow-container span {
+    color:#000000c9;
 }
 
 
