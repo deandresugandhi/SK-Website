@@ -158,7 +158,7 @@ section {
 }
 /* Arrow */
 .videocontent .arrow-container {
-    bottom: 3vh;
+    bottom: 2vh;
 }
 
 
@@ -168,7 +168,7 @@ section {
     position: relative;
     padding-top: 4vh;
     padding-bottom: 5vh;
-    background-color: #6a5181;
+    background-color: #58416e;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -176,6 +176,7 @@ section {
 }
 
 .introduction-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -183,6 +184,8 @@ section {
 
 /* Image */
 .introduction img {
+    width: 17vw;
+    max-width: 120px;
     align-self: center;
     margin-bottom: 20px;
     animation: rotate 9s linear infinite;
@@ -208,7 +211,7 @@ section {
 }
 
 .introduction h1 {
-    font-size: 3.2rem;
+    font-size: min(11vw, 3rem);
     line-height: .9;
     color: #ececec;
     margin: 0;
@@ -217,11 +220,11 @@ section {
 
 .introduction h1:nth-of-type(2) {
     color: #e6b122;
-    font-size: 6rem;
+    font-size: min(23vw, 6rem);
 }
 
 .introduction p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: #ececec;
     margin-top: 20px;
     font-weight: 50;
@@ -230,7 +233,7 @@ section {
 
 /* Arrow */
 .introduction .arrow-container {
-    bottom: 3vh;
+    bottom: 2vh;
     align-self: center;
 }
 
