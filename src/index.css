@@ -337,10 +337,12 @@ section {
 /* Section */
 .contact-us {
     width: 100vw;
+    min-height: 80vh;
     display: flex;
     align-items: flex-start;
+    justify-content: flex-start;
     background-color:#242424;
-    padding-top: 15px;
+    padding-top: 10vw;
     padding-bottom: 60px;
     padding-left: 50px;
     padding-right: 50px;
@@ -422,11 +424,11 @@ section {
 /* Section */
 .footer {
     width: 100%;
+    min-height: 20vh;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     background-color:#242424;
-    padding-top: 15px;
-    padding-bottom: 15px;
     border: none;
 }
 
@@ -438,14 +440,14 @@ section {
     color: #858585;
     text-align: center;
     margin-top: 12px;
-    margin-bottom: 12px;
+    margin-bottom: 25px;
 }
 
 /* Image */
 .footer img {
     width: 90px;
     filter: brightness(70%);
-    margin-top: 10px;
+    margin-top: 25px;
 }
 
 /* Laptop - FHD desktop styling */
