@@ -363,11 +363,11 @@ section {
     border: none;
 }
 
-.contact-us *:not(:first-child) {
+.contact-us * {
     transition: .7s;
 }
 
-.contact-us *:not(:first-child).hidden {
+.contact-us > *:not(:first-child).hidden {
     opacity: 0;
     transform: translateY(30px);
 }

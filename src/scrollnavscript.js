@@ -61,7 +61,7 @@ window.addEventListener('scroll', function () {
 });
 
 const targetElement = document.querySelector('#social_media');
-const changeElements = document.querySelectorAll('.contact-us *:not(:first-child)');
+const changeElements = document.querySelectorAll('.contact-us > *:not(:first-child)');
 
 const options = {
     root: null,
