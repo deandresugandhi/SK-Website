@@ -32,7 +32,7 @@ window.addEventListener('scroll', function () {
     const viewportHeight = window.innerHeight;
     const scrollThresholdPercentage = 50;
     const scrollThreshold = (scrollThresholdPercentage / 100) * viewportHeight;
-    const scrollThresholdPercentage2 = 190;
+    const scrollThresholdPercentage2 = 95;
     const scrollThreshold2 = (scrollThresholdPercentage2 / 100) * viewportHeight;
     
     if (window.scrollY > scrollThreshold) {
