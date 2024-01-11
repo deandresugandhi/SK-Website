@@ -447,6 +447,7 @@ section {
 /* FOOTER SECTION STYLING */
 /* Section */
 .footer {
+    position: relative;
     width: 100%;
     min-height: 20vh;
     display: flex;
@@ -472,6 +473,17 @@ section {
     width: 90px;
     filter: brightness(70%);
     margin-top: 25px;
+}
+
+/* Arrow */
+.footer .arrow-container {
+    top: 1vh;
+}
+
+.footer .arrow {
+    border-bottom: 10px solid #cfcfcfc9;
+    border-top: unset;
+    transform: rotate(180deg);
 }
 
 /* Laptop - FHD desktop styling */
