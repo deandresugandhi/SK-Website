@@ -32,3 +32,28 @@ const observer = new IntersectionObserver((entries, observer) => {
 cards.forEach(card => observer.observe(card));
 
 // You can add additional logic here for other scroll-related events
+
+const logo = document.querySelector('.skicon');
+const hamburgerIcon = document.querySelector('.hamburgericon');
+const introParagraph = document.querySelector('#introduction-container p');
+const introLearnMore = document.querySelector('#introduction-container h2:nth-of-type(2)');
+
+window.addEventListener('scroll', function () {
+    const viewportHeight = window.innerHeight;
+    const scrollThresholdPercentage = 50;
+    const scrollThreshold = (scrollThresholdPercentage / 100) * viewportHeight;
+    const scrollThresholdPercentage2 = 95;
+    const scrollThreshold2 = (scrollThresholdPercentage2 / 100) * viewportHeight;
+   
+    if (window.scrollY > scrollThreshold) {
+        logo.classList.add('hidden');
+    } else {
+        logo.classList.remove('hidden');
+    }
+
+    if (window.scrollY > scrollThreshold2) {
+        hamburgerIcon.classList.add('addbackground');
+    } else {
+        hamburgerIcon.classList.remove('addbackground');
+    }
+});
