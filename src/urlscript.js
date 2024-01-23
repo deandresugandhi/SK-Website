@@ -1,3 +1,4 @@
+// Update URL based on current scroll position
 document.addEventListener('DOMContentLoaded', function () {
     // Debounce function
     function debounce(func, delay) {
@@ -49,17 +50,17 @@ document.addEventListener('DOMContentLoaded', function () {
         return '';
     }
 
-    // Debounced function to update the URL on scroll
-    const debouncedUpdateUrl = debounce(updateUrl, 200); // Adjust the delay as needed
+    // Run debounced function to update the URL on scroll
+    const debouncedUpdateUrl = debounce(updateUrl, 200);
 
     // Listen to the scroll event and update the URL (debounced)
     document.addEventListener('scroll', debouncedUpdateUrl);
 
-    // Initial URL update
+    // Initialize URL update
     updateUrl();
 });
 
-// Link configuration to adjust based on scrolling / external links
+// Link configuration for external and scrolling links
 document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('a').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -112,60 +113,3 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 100);
     }
 });
-
-const logo = document.querySelector('.skicon');
-const hamburgerIcon = document.querySelector('.hamburgericon');
-const introParagraph = document.querySelector('#introduction-container p');
-const introLearnMore = document.querySelector('#introduction-container h2:nth-of-type(2)');
-
-window.addEventListener('scroll', function () {
-    const viewportHeight = window.innerHeight;
-    const scrollThresholdPercentage = 50;
-    const scrollThreshold = (scrollThresholdPercentage / 100) * viewportHeight;
-    const scrollThresholdPercentage2 = 95;
-    const scrollThreshold2 = (scrollThresholdPercentage2 / 100) * viewportHeight;
-    const scrollThresholdPercentage3 = 80;
-    const scrollThreshold3 = (scrollThresholdPercentage3 / 100) * viewportHeight;
-    
-    if (window.scrollY > scrollThreshold) {
-        logo.classList.add('hidden');
-    } else {
-        logo.classList.remove('hidden');
-    }
-
-    if (window.scrollY > scrollThreshold2) {
-        hamburgerIcon.classList.add('addbackground');
-    } else {
-        hamburgerIcon.classList.remove('addbackground');
-    }
-
-    if (window.scrollY < scrollThreshold3) {
-        introParagraph.classList.add('hidden');
-        introLearnMore.classList.add('hidden');
-    } else {
-        introParagraph.classList.remove('hidden');
-        introLearnMore.classList.remove('hidden');
-    }
-});
-
-const targetElement = document.querySelector('#social_media');
-const changeElements = document.querySelectorAll('#contact-us > *:not(:first-child)');
-
-const options = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.5
-};
-
-const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            changeElements.forEach(element => element.classList.remove('hidden'));
-        } else {
-            changeElements.forEach(element => element.classList.add('hidden'));
-        }
-    });
-}, options);
-
-observer.observe(targetElement);
-

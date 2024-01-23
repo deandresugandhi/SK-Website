@@ -1,3 +1,4 @@
+// Script for Nav Bar behavior
 const hamburger = document.querySelector(".hamburger");
 const mobileMenu = document.querySelector(".mobilemenu");
 const navBlock = document.querySelector(".navblock");
