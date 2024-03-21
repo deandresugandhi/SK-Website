@@ -14,6 +14,7 @@
     <script async defer src="./urlscript.js"></script>
     <script async defer src="./indexscrollscript.js"></script>
     <script async defer src="./navbarscript.js"></script>
+    <script async defer src="./videomodal.js"></script>
 </head>
 <body>
     <!-- Navigation bar -->
@@ -57,7 +58,7 @@
                 <h1>ARTIST</h1>
                 <h1>WITHIN YOU</h1>
                 <p>We are <strong>SK Music & Production</strong>, a Sydney-based music and video production company. Our mission lies in bringing out the artists within our clients and breathe life into their visions. Since our inception in 2018, our team of music and film buffs have produced a diverse range of visual and sonic wonders, from original music arrangements, video covers, motion-graphics, product shoots, to music videos.</p>
-                <h2>LEARN MORE</h2>
+                <a href="./about.html"><h2>LEARN MORE</h2></a>
             </div>
             <div class="arrow-container" onclick="scrollToContent('#featured-work')">
                 <div class="arrow"></div>
@@ -90,24 +91,48 @@
         </section>
         <section id="featured-work">
             <h1>FEATURED WORK</h1>
-            <article class="project">
-                <div class="image-overlay"></div>
-                <img src="./assets/tiada-rumah.jpg">
-                <h1>TIADA RUMAH LAGI <br>UNTUK PULANG <br>MUSIC VIDEO</h1>
-                <h2>CLIENT: VERENA</h2>
-            </article>
-            <article class="project">
-                <div class="image-overlay"></div>
-                <img src="./assets/kpa-worship.png">
-                <h1>KAULAH ALLAH<br> DI HIDUPKU<br> MUSIC VIDEO</h1>
-                <h2>CLIENT: KPA WORSHIP</h2>
-            </article>
-            <article class="project">
-                <div class="image-overlay"></div>
-                <img src="./assets/mbb.png">
-                <h1>BERSYUKURLAH <br> BY JPCC WORSHIP<br>COVER VIDEO</h1>
-                <h2>CLIENT: MORNING BUTTER BUNS</h2>
-            </article>
+                <article class="project">
+                    <button class="modalBtn">
+                        <div class="image-overlay"></div>
+                        <img src="./assets/tiada-rumah.jpg">
+                        <h1>TIADA RUMAH LAGI <br>UNTUK PULANG <br>MUSIC VIDEO</h1>
+                        <h2>CLIENT: VERENA</h2>
+                    </button>
+                    <div id="modal-1" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p>TEST</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="project">
+                    <button class="modalBtn">
+                        <div class="image-overlay"></div>
+                        <img src="./assets/kpa-worship.png">
+                        <h1>KAULAH ALLAH<br> DI HIDUPKU<br> MUSIC VIDEO</h1>
+                        <h2>CLIENT: KPA WORSHIP</h2>
+                    </button>
+                    <div id="modal-2" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p>TEST</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="project">
+                    <button class="modalBtn">
+                        <div class="image-overlay"></div>
+                        <img src="./assets/mbb.png">
+                        <h1>BERSYUKURLAH <br> BY JPCC WORSHIP<br>COVER VIDEO</h1>
+                        <h2>CLIENT: MORNING BUTTER BUNS</h2>
+                    </button>
+                    <div id="modal-3" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p>TEST</p>
+                        </div>
+                    </div>
+                </article>
             <a href="./work.html"><h3>VIEW MORE</h3></a>
             <div class="arrow-container" onclick="scrollToContent('#contact-us')">
                 <div class="arrow"></div>

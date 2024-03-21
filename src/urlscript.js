@@ -61,6 +61,26 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Link configuration for external and scrolling links
+function scrollToContent(target) {
+    const hashIndex = target.indexOf('#');
+
+    if (hashIndex !== -1) {
+        const targetId = target.slice(hashIndex + 1);
+
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            // Scroll to the target element within the current page
+            targetElement.scrollIntoView({
+                behavior: 'smooth'
+            });
+        } else {
+            console.error(`Element with id '${targetId}' not found.`);
+        }
+    } else {
+        console.error(`Invalid href format: '${target}'.`);
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('a').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -78,26 +98,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
-
-    function scrollToContent(target) {
-        const hashIndex = target.indexOf('#');
-
-        if (hashIndex !== -1) {
-            const targetId = target.slice(hashIndex + 1);
-
-            const targetElement = document.getElementById(targetId);
-            if (targetElement) {
-                // Scroll to the target element within the current page
-                targetElement.scrollIntoView({
-                    behavior: 'smooth'
-                });
-            } else {
-                console.error(`Element with id '${targetId}' not found.`);
-            }
-        } else {
-            console.error(`Invalid href format: '${target}'.`);
-        }
-    }
 
     // Check if there's a hash parameter for scrolling
     const urlParams = new URLSearchParams(window.location.search);
