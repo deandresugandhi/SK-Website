@@ -11,7 +11,7 @@ modalBtns.forEach(function(btn) {
          var targetModal = parentArticle.querySelector(".modal");
         // Open the target modal
         if (targetModal) {
-            targetModal.style.display = "block";
+            targetModal.classList.add("active");
             document.body.style.overflow = "hidden";
         }
     });
@@ -31,7 +31,7 @@ closeBtns.forEach(function(btn) {
 
         // Close the modal
         if (targetModal) {
-            targetModal.style.display = "none";
+            targetModal.classList.remove("active")
             document.body.style.overflow = "";
         }
     });
