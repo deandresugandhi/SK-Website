@@ -14,6 +14,8 @@
     <script async defer src="./urlscript.js"></script>
     <script async defer src="./indexscrollscript.js"></script>
     <script async defer src="./navbarscript.js"></script>
+    <script async defer src="./videomodal.js"></script>
+    <script src="https://kit.fontawesome.com/3948f18200.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Navigation bar -->
@@ -74,34 +76,145 @@
             <h1>VIDEOS</h1>
             <h2>MUSIC <span>VIDEOS</span></h2>
             <article class="project">
-                <div class="image-overlay"></div>
-                <img src="./assets/tiada-rumah.jpg">
-                <h1>TIADA RUMAH LAGI <br>UNTUK PULANG <br>MUSIC VIDEO</h1>
-                <h2>CLIENT: VERENA</h2>
+                <button class="modalBtn">
+                    <div class="image-overlay"></div>
+                    <img src="./assets/tiada-rumah.jpg">
+                    <h1>TIADA RUMAH LAGI <br>UNTUK PULANG <br>MUSIC VIDEO</h1>
+                    <h2>CLIENT: VERENA</h2>
+                </button>
+                <div id="modal-1" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div style="padding:56.25% 0 0 0;position:relative;">
+                            <iframe src="https://player.vimeo.com/video/929829188?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+                                frameborder="0" 
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
+                                style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                                title="TRLUP Music Video">
+                            </iframe>
+                        </div>
+                        <script src="https://player.vimeo.com/api/player.js"></script>
+                    </div>
+                </div>
             </article>
             <article class="project">
-                <div class="image-overlay"></div>
-                <img src="./assets/kpa-worship.png">
-                <h1>KAULAH ALLAH<br> DI HIDUPKU<br> MUSIC VIDEO</h1>
-                <h2>CLIENT: KPA WORSHIP</h2>
+                <button class="modalBtn">
+                    <div class="image-overlay"></div>
+                    <img src="./assets/schwa-studio.jpg">
+                    <h1>INSIDE<br> SCHWA STUDIO</h1>
+                    <h2>CLIENT: SCHWA STUDIO</h2>
+                </button>
+                <div id="modal-2" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div style="padding:56.25% 0 0 0;position:relative;">
+                            <iframe src="https://www.youtube.com/embed/314zWFZJKek?si=kKB0GoGeTepgCD5j" 
+                                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
             </article>
             <article class="project">
-                <div class="image-overlay"></div>
-                <img src="./assets/mbb.png">
-                <h1>BERSYUKURLAH <br> BY JPCC WORSHIP<br>COVER VIDEO</h1>
-                <h2>CLIENT: MORNING BUTTER BUNS</h2>
+                <button class="modalBtn">
+                    <div class="image-overlay"></div>
+                    <img src="./assets/true-lovers.png">
+                    <h1>TRUE LOVERS <br> BY HOLY HOLY<br>COVER VIDEO</h1>
+                    <h2>CLIENT: SK COVER</h2>
+                </button>
+                <div id="modal-3" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div style="padding:56.25% 0 0 0;position:relative;">
+                            <iframe 
+                                src="https://www.youtube.com/embed/q_Msf7dATBA?si=_wfomMONSFwDITXw" 
+                                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
             </article>
             <article class="project">
-                <div class="image-overlay"></div>
-                <img src="./assets/midnight-insomnia.png">
-                <h1>MIDNIGHT<br>INSOMNIA</h1>
-                <h2>CLIENT: SECONDS AFTER</h2>
+                <button class="modalBtn">
+                    <div class="image-overlay"></div>
+                    <img src="./assets/mbb.png">
+                    <h1>BERSYUKURLAH <br> BY JPCC WORSHIP<br>COVER VIDEO</h1>
+                    <h2>CLIENT: MORNING BUTTER BUNS</h2>
+                </button>
+                <div id="modal-4" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div style="padding:56.25% 0 0 0;position:relative;">
+                            <iframe 
+                                src="https://www-ccv.adobe.io/v1/player/ccv/JVq8rUGbuDK/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View" 
+                                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
             </article>
             <article class="project">
-                <div class="image-overlay"></div>
-                <img src="./assets/shes-out-of-my-league.jpg">
-                <h1>SHE'S OUT OF<br>MY LEAGUE</h1>
-                <h2>CLIENT: SECONDS AFTER</h2>
+                <button class="modalBtn">
+                    <div class="image-overlay"></div>
+                    <img src="./assets/midnight-insomnia.png">
+                    <h1>MIDNIGHT<br>INSOMNIA</h1>
+                    <h2>CLIENT: SECONDS AFTER</h2>
+                </button>
+                <div id="modal-5" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div style="padding:56.25% 0 0 0;position:relative;">
+                            <iframe 
+                                src="https://www.youtube.com/embed/k17ihrFh4ac?si=PuzANfTtsRnhoQud" 
+                                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="project">
+                <button class="modalBtn">
+                    <div class="image-overlay"></div>
+                    <img src="./assets/shes-out-of-my-league.jpg">
+                    <h1>SHE'S OUT OF<br>MY LEAGUE</h1>
+                    <h2>CLIENT: SECONDS AFTER</h2>
+                </button>
+                <div id="modal-6" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div style="padding:56.25% 0 0 0;position:relative;">
+                            <iframe 
+                                src="https://www.youtube.com/embed/t3qYp6Np2J8?si=OzYDwmF8MzVUPXYM" 
+                                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
             </article>
             <article class="project">
                 <div class="image-overlay"></div>

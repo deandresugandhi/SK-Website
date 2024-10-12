@@ -218,7 +218,7 @@ section {
     transition: .7s ease;
 }
 
-#introduction h2:nth-of-type(2).hidden {
+#introduction a h2.hidden {
     opacity: 0;
     transform: translateY(30px);
 }
@@ -407,6 +407,71 @@ section {
     width: 30px;
     height: 30px;
     margin-top: 10px;
+}
+
+/* Socials */
+#socials {
+    display: flex;
+    align-self: center;
+    margin-top: 12px;
+    margin-bottom: 30px;
+}
+
+#socials li {
+    list-style: none;
+}
+
+#socials li a {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: block;
+    text-align: center;
+    margin: 0 5px;
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration:none;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    background: linear-gradient(0deg, #ddd, #fff);
+    transition: .5s;
+}
+
+#socials li a:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    text-decoration:none;
+}
+
+#socials li a i {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: linear-gradient(0deg, #fff, #ddd);
+    border-radius: 50%;
+    line-height: 48px;
+    font-size: 28px;
+    color: #262626;
+    transition: .5s;
+}
+
+#socials li:nth-child(1) a i:hover {
+    color: #3b5998;
+}
+
+#socials li:nth-child(2) a:hover .fa-brands {
+    color: #696969;
+}
+
+#socials li:nth-child(3) a:hover .fa-brands {
+    color: #007bb6;
+}
+
+#socials li:nth-child(4) a:hover .fa-brands {
+    color: #e4405f;
+}
+
+#socials li:nth-child(5) a i:hover {
+    color: #e2a637;
 }
 
 /* Text */
