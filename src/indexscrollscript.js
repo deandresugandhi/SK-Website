@@ -2,7 +2,9 @@
 const logo = document.querySelector('.skicon');
 const hamburgerIcon = document.querySelector('.hamburgericon');
 const introParagraph = document.querySelector('#introduction-container p');
-const introLearnMore = document.querySelector('#introduction-container a h2');
+const introLearnMore = document.querySelector('#learn-more-button');
+
+console.log(introLearnMore)
 
 window.addEventListener('scroll', function () {
     const viewportHeight = window.innerHeight;

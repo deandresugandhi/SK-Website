@@ -189,6 +189,24 @@ section {
     align-items: flex-start;
 }
 
+#introduction-container a {
+    background-color: rgb(253, 253, 253);
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 6px;
+    margin-top: 30px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+#introduction-container a h2 {
+    color: #000000;
+    font-weight: 800;
+    font-size: 1rem;
+}
+
 /* Image */
 #introduction img {
     width: 17vw;
@@ -218,7 +236,11 @@ section {
     transition: .7s ease;
 }
 
-#introduction a h2.hidden {
+#introduction a {
+    transition: .7s ease;
+}
+
+#introduction a.hidden {
     opacity: 0;
     transform: translateY(30px);
 }
@@ -238,9 +260,9 @@ section {
 
 #introduction p {
     font-size: 1.1rem;
-    color: #ececec;
+    color: #e6e6e6;
     margin-top: 20px;
-    font-weight: 50;
+    font-weight: 300;
     max-width: 800px;
     transition: .7s ease;
     position: relative;
@@ -307,6 +329,10 @@ section {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.300); /* Adjust the opacity as needed */
+}
+
+.modalBtn {
+    cursor: pointer;
 }
 
 .project img {

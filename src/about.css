@@ -324,6 +324,18 @@ section {
     animation: rotate 9s linear infinite;
 }
 
+#team {
+    position: relative;
+    padding-top: 4vh;
+    padding-bottom: 5vh;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    background-color: #ea9268;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
 @keyframes rotate {
     0% {
         transform: rotate(0);
@@ -357,12 +369,20 @@ section {
     font-weight: 800;
 }
 
+#team h1 {
+    font-size: min(11vw, 3rem);
+    line-height: .9;
+    color: #e9e9e9;
+    margin: 0;
+    font-weight: 800;
+}
+
 #values h1:nth-of-type(2) {
     color: #e6b122;
     font-size: min(23vw, 6rem);
 }
 
-#values p {
+#values p, #team > p {
     font-size: 1.1rem;
     color: #252525;
     margin-top: 20px;
@@ -378,10 +398,42 @@ section {
     transform: translateY(30px)
 }
 
+/* Photo */
+#photo img {
+    width: 100%;
+}
+
+#caption {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#caption h2 {
+    display: flex;
+    position: relative;
+    color: white;
+}
+
+#caption p {
+    display: flex;
+    position: relative;
+    font-weight: 500;
+}
+
+
 /* Arrow */
 #values .arrow-container {
     bottom: 2vh;
     align-self: center;
+}
+
+#values .arrow-container * {
+    color: black;
+}
+
+#values .arrow {
+    border-top: 10px solid black;
 }
 
 /* Scroll Menu */
@@ -526,20 +578,6 @@ section {
     font-size: 1.4rem;
     color: #ffffff;
     margin-bottom: 20px;
-}
-
-.project h2 {
-    font-weight: 50;
-    font-size: .9rem;
-    color: #f3f3f3;
-}
-
-.project h1, h2 {
-    position: absolute;
-    bottom: 25px;
-    right: 20px;
-    text-align: right;
-    opacity: 0.9;
 }
 
 /* Arrow */
